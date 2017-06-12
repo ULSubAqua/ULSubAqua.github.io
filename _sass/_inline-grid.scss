@@ -1,0 +1,136 @@
+.inline-container {
+
+  text-align: justify;
+  font-size: 0;
+  margin-top: 2.5rem;
+
+}
+
+.inline-container:after {
+
+  content: '';
+  display: inline-block;
+  width: 100%;
+
+}
+
+.inline-container .item,
+.inline-container .gridbreak,
+.inline-container .gap {
+
+  display: inline-block;
+  width: 32%;
+  vertical-align: top;
+
+}
+
+.inline-container .item {
+
+  vertical-align: top;
+  text-align: left;
+  margin-bottom: 1.25rem;
+  font-size: $font-size-base;
+  padding: 1.25rem;
+
+  .services & {
+
+    padding: 0;
+
+  }
+
+  .single-brand-page & {
+
+    background: inherit;
+    padding: 0;
+    border: solid 1.25rem $gray-lighter;
+
+  }
+
+  .teaser-text {
+
+    background: $gray-lighter;
+    padding: 1.25rem 0;
+
+  }
+
+  p {
+
+    font-size: 1rem;
+
+  }
+
+  h2 > a {
+
+    text-decoration: none;
+
+  }
+
+}
+
+.inline-container#mixitup-container {
+
+    .item {
+
+      // -----------------------------------------------------------------------
+      #display: none; //<-- uncomment this rule for use with MixItUp */
+      // -----------------------------------------------------------------------
+
+    }
+
+  }
+
+.products.inline-container .item {
+
+  padding: 0.625rem;
+
+  h2 {
+
+    margin-top: 0;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+
+  }
+
+}
+
+/* Large screen & Bigger */
+@include media-breakpoint-down(lg) {
+  .inline-container .item,
+  .inline-container .gridbreak,
+  .inline-container .gap {
+    width: 32%;//23.5%;
+  }
+  .products.inline-container .item,
+  .products.inline-container .gap {
+    width: 100%;//23.5%;
+    font-size: 1rem;
+  }
+}
+/* Medium screen and smaller */
+@include media-breakpoint-up(md) {
+  .inline-container .item,
+  .inline-container .gap {
+    width: 32%;//23.5%;
+  }
+}
+/* Small screen and smaller */
+@include media-breakpoint-up(sm) {
+  .inline-container .item,
+  .inline-container .gap {
+    width: 32%;
+  }
+}
+/* Extra small screen and smaller */
+@include media-breakpoint-up(xs) {
+  .inline-container .item,
+  .inline-container .gap {
+    width: 48%;
+  }
+}
+/* smaller than Extra small screen */
+@include media-breakpoint-up(xs - 1) {
+  .inline-container .item,
+  .inline-container .gap {
+    width: 100%;
+  }
+}

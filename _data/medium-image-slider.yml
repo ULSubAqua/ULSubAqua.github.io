@@ -1,0 +1,14 @@
+- url: "/services/"
+  image: "../assets/images/medium-images/stock-1.jpeg"
+
+- url: "/projects/"
+  image: "../assets/images/medium-images/stock-2.jpeg"
+
+- url: "/services/"
+  image: "../assets/images/medium-images/stock-3.jpeg"
+
+- url: "/projects/"
+  image: "../assets/images/medium-images/stock-4.jpeg"
+
+- url: "/blog/"
+  image: "../assets/images/medium-images/stock-5.jpeg"

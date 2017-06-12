@@ -1,0 +1,36 @@
+
+
+
+#!#!#!#!# Do not edit below this line.
+# Generated automatically using `grunt imageManifest` on Sat Mar 04 2017 13:37:03 GMT+0000 (GMT)
+
+assets/images/medium-images/stock-1.jpeg:
+  width: 720
+  height: 460
+  aspect: 1.565217391304348
+  src: assets/images/medium-images/stock-1.jpeg
+  images-category: images-medium-images
+assets/images/medium-images/stock-2.jpeg:
+  width: 720
+  height: 460
+  aspect: 1.565217391304348
+  src: assets/images/medium-images/stock-2.jpeg
+  images-category: images-medium-images
+assets/images/medium-images/stock-3.jpeg:
+  width: 720
+  height: 460
+  aspect: 1.565217391304348
+  src: assets/images/medium-images/stock-3.jpeg
+  images-category: images-medium-images
+assets/images/medium-images/stock-4.jpeg:
+  width: 720
+  height: 460
+  aspect: 1.565217391304348
+  src: assets/images/medium-images/stock-4.jpeg
+  images-category: images-medium-images
+assets/images/medium-images/stock-5.jpeg:
+  width: 720
+  height: 460
+  aspect: 1.565217391304348
+  src: assets/images/medium-images/stock-5.jpeg
+  images-category: images-medium-images

@@ -1,0 +1,12 @@
+{% include partial/style-rules.html %}
+<section id="{% if section.unique-class != nil %}{{ section.unique-class }}{% else %}{{ section.title | slugify }}{% endif %}" class="content-section {% if 'light' == section.text-colour %} light-text{% endif %}"{{ bg-style }}>
+    <div class="row">
+      <div class="col-md-6 offset-md-3 text-center">
+        <h2>{{section.title}}</h2>
+        <div>
+          {{section.content}}
+        </div>
+        <br><a class="btn btn-default btn-md ghost" href="{{ site.baseurl }}/services">More Info&nbsp;&raquo;</a></br>
+      </div>
+  </div>
+</section>

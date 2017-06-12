@@ -1,0 +1,37 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div itemscope itemtype="http://schema.org/LocalBusiness">
+          {% for item in site.data.company-details %}
+          <h3><span itemprop="name">{{ item.company-name }}</span></h3>
+          {% endfor %}
+          {% include partial/address.html %}
+          <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+            <meta itemprop="latitude" content="52.892491" />
+            <meta itemprop="longitude" content="-8.867443" />
+          </span>
+        </div>
+      </div>
+      <div class="col-md-3 col-md-offset-1">
+        <h3>Site Links</h3>
+          {% include partial/pages-nav.html %}
+      </div>
+      <div class="col-md-3 col-md-offset-1">
+        <div class="row">
+          <h3>Follow Us</h3>
+          {% include partial/social-links.html %}
+        </div>
+      </div>
+      <div class="cw-credit col-md-12">
+        <p>Website by <a href="http://github.com/RoryEgan">Rory Egan</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center hidden-xs">
+    <a href="#" id="go-top" title="Back to top of this page">
+      <i class="fa fa-arrow-up"></i><br><span class="go-top-text">Top</span>
+    </a>
+  </div>
+</footer>
+{% include script/footer-scripts.html %}

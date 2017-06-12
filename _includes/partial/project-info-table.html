@@ -1,0 +1,5 @@
+<table class="table table-responsive project-info">
+  {% for datum in page.project-data %}
+    <tr><td>{{ datum[0] | replace: '-', ' ' | capitalize }}:</td><td> {{ datum[1] }}</td></tr>
+  {% endfor %}
+</table>

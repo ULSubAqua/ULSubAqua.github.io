@@ -1,0 +1,11 @@
+{% capture bg-style %}
+{% if section.bg_image != nil %}
+ style="background:{% if section.bg-opaque-overlay != nil %} linear-gradient(
+    {{ section.bg-opaque-overlay }},
+    {{ section.bg-opaque-overlay }}
+  ),{% endif %} {% if section.bg_image != nil %}url('{{ section.bg_image }}') center center fixed; background-size: cover;{% endif %}"
+{% endif %}
+{% if section.bg_colour != nil %}
+  style="background-color: {{section.bg_colour}}; {% if section.text-colour != nil %}color: {{ section.text-colour }}{% endif %}"
+{% endif %}
+{% endcapture %}

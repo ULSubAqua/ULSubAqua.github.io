@@ -1,0 +1,84 @@
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
+$brand-primary: rgb(164, 4, 9);
+$brand-secondary: rgb(190, 18, 56);
+$navbar-background: $brand-secondary;
+$navbar-colour: #404040;
+
+// -----------------------------------------------------------------------------
+
+$footer-background: rgb(33, 33, 33);
+$footer-colour: #fff;
+$footer-link-colour: #fff;
+
+// -----------------------------------------------------------------------------
+
+$jumbotron-background: rgba(#5b5b5b, 0.7);
+$services-well-bg: rgba(#252525, 0.8);
+$projects-well-bg: rgba(#aaaaaa, 0.8);
+
+// -----------------------------------------------------------------------------
+
+$intro-colour: #fff;
+$intro-background: #fff;
+
+// -----------------------------------------------------------------------------
+
+$services-opaque-bg: rgba(40, 40, 40, 0.55);
+$light-opaque-background: rgba(102, 102, 102, 0.5);
+
+// -----------------------------------------------------------------------------
+$phone-button-bg: darken($brand-secondary, 10%);
+$button-colour: #fff;
+
+// -----------------------------------------------------------------------------
+
+$vertical-padding: 4.375rem;
+
+// -----------------------------------------------------------------------------
+
+$intro-background-image: url(../assets/images/big-images/57-58-grafton-street/completed-photographs/15-IMG_6335.JPG);
+$services-background-image: url(../assets/images/bedroom-extension-img-3.png);//url(../assets/images/bridge.jpg);
+$services-background-opacity: 0.5;
+
+// Navbar Overrides
+// -----------------------------------------------------------------------------
+$navbar-margin-bottom: 0;
+
+// Headings
+// -----------------------------------------------------------------------------
+$font-family-sans-serif:  "Lato", Arial, sans-serif !default;
+$font-family-serif:       "Suez One", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          1.25rem !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.0)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 1.8)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.4)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.2)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    $font-family-serif;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+$blockquote-font-size:        $font-size-base;
+$blockquote-border-color:     lighten( $brand-primary, 40% );
+
+$border-radius-base:        0 !default;
+$border-radius-large:       0 !default;
+$border-radius-small:       0 !default;

@@ -1,0 +1,18 @@
+<div class="sidebar margin-top">
+  {% if page.layout == "about" %}
+  {% for image in page.images %}
+  {% if forloop.first == true %}
+  <img src="{{ site.baseurl }}/{{ image.src }}" title="{{ image.title }}" alt="{{ image.alt }}" class="img-fluid">
+  {% if image.caption != nil %}
+  <div class="img-caption"><h5>{{ image.caption }}</h5></div>
+  {% endif %}
+  {% else %}
+  <img src="{{ site.baseurl }}/{{ image.src }}" title="{{ image.title }}" alt="{{ image.alt }}" class="img-fluid" style="margin-top: 40px;">
+  {% endif %}
+  {% endfor %}
+  {% else %}
+  {% include partial/carousel.html %}
+  {% endif %}
+  <h2>Our Services</h2>
+  {% include partial/services-nav.html %}
+</div>

@@ -1,0 +1,41 @@
+---
+layout: pages/frontpage
+map-zoom: 16
+map-type: single-centre
+map-height: 400px
+intro-bg-opaque-overlay: rgba(40, 20, 20, 0.6)
+intro-bg-image: assets/images/big-images/intro.jpg
+intro-color: \#ffffff;
+# Intro section carousel images
+images:
+  - src: assets/images/medium-images/stock-3.jpeg
+    title: Hello
+    description: This is a caption.
+  - src: assets/images/medium-images/stock-4.jpeg
+    title: Hello
+    description: This is another caption.
+  - src: assets/images/medium-images/stock-5.jpeg
+    title: Hello
+    description: This is yet another caption.
+---
+{% capture intro-bg-style %}
+style="color: #ffffff; background:
+  {% if page.intro-bg-opaque-overlay != nil %} linear-gradient(
+      {{ page.intro-bg-opaque-overlay }},
+      {{ page.intro-bg-opaque-overlay }}
+    ),
+  {% endif %}{% if page.intro-bg-image != nil %}
+   url('{{ page.intro-bg-image }}') center center fixed; background-size: cover;
+  {% endif %}"
+{% endcapture %}
+
+{% include section/centred-intro.html bg-style = intro-bg-style %}
+
+{% assign sections = site.frontpage-sections | sort: 'order' %}
+{% for section in sections %}
+  {% if section.include != null %}
+    {% include section/{{ section.include }} %}
+  {% comment %}{% else %}
+    {% include sections/default.html %}{% endcomment %}
+  {% endif %}
+{% endfor %}

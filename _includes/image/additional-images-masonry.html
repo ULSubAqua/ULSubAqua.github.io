@@ -1,0 +1,22 @@
+{% if page.additional-images != nil %}
+<h2>Project Images:</h2>
+<div id="masonry-container">
+<style media="screen">
+.item { margin: 5px; width: 50%; }
+</style>
+{% for image in site.data.image-manifest %}
+{% if page.images-category contains image[1].images-category %}
+<div class="item">
+  <img class="img-fluid"
+  src="{{ site.baseurl }}/{{ image[0] }}"
+  alt="{{ image[1].images-category }}"
+  height="{{ image[1].height }}"
+  width="{{ image[1].width }}"
+  />
+  <!-- <p class="small">Image {{ forloop.index }}: {{ image[0] }}</p>
+  <p class="small">Category: {{ image[1].images-category }}</p> -->
+</div>
+{% endif %}
+{% endfor %}
+</div>
+{% endif %}

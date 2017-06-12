@@ -1,0 +1,5 @@
+{% for item in site.data.company-details %}
+  {% if item.company-vat-number != nil %}Registered VAT No:&nbsp;{{item.company-vat-number}}{% endif %}
+  {% if item.registered-company-number != nil %}<br/>Company No:&nbsp;{{item.registered-company-number}}{% endif %}
+  {% comment %}{% if site.additionalValue != nil %}<br/>{{ site.additionalKey }}: {{ site.additionalValue }}{% endif %}{% endcomment %}
+{% endfor %}

@@ -1,0 +1,53 @@
+<form class="form-horizontal" action="http://localhost/form.php" onsubmit="return checkHoneypot()" method="POST">
+  <fieldset>
+
+    {% for node in site.data.forms %}
+
+    {% if node.formtype == 'text' %}
+    <div class="form-group">
+      <input name="{{node.name}}" placeholder="{{node.placeholder}}" type="{{node.type}}" class="form-control" required>
+    </div>
+
+    {% elsif node.formtype == 'textarea' %}
+
+    <div class="form-group">
+      <textarea class="form-control" id="{{node.id}}" name="{{node.name}}" placeholder="{{node.placeholder}}"></textarea>
+    </div>
+
+    {% elsif node.formtype == 'radio' %}
+
+    {% for offer in site.offers %}
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="{{node.formtype}}" name="{{node.name}}" id="plan-option-{{forloop.index}}" value="{{offer.title}}">
+        {{offer.title}}&nbsp;&mdash;&nbsp;be sure to explain why it's great
+      </label>
+    </div>
+    {% endfor %}
+
+    {% endif %}
+
+    {% endfor %}
+
+
+    <div class="form-group">
+      <input value="Submit Form" type="submit" class="btn ghost">
+    </div>
+    <input id="gotcha" name="_gotcha" style="display:none" type="text">
+    <input name="campaign" style="display:none" type="hidden" value="facebook_ad_1">
+    <input name="redirect_url" style="display:none" type="hidden" value="http://carawebs.dev/form-submission-result">
+
+  </fieldset>
+</form>
+<script type="text/javascript">
+function checkHoneypot() {
+
+  if(!document.getElementById("gotcha").value) {
+    return true;
+  }
+
+  else {
+    return false;
+  }
+}
+</script>

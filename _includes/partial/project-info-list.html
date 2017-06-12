@@ -1,0 +1,5 @@
+<ul class="project-info list-unstyled">
+  {% for datum in page.project-data %}
+    <li>{{ datum[0] | replace: '-', ' ' | capitalize }}: {{ datum[1] }}</li>
+  {% endfor %}
+</ul>

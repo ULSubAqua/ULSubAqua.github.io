@@ -1,0 +1,8 @@
+<div id="sticky-phone-footer" class="text-left hidden-lg hidden-md hidden-sm">
+  {% for item in site.data.contact %}
+  <a href="tel:{{ contact.contact-mobile-number }}" class="click-phone btn ghost btn-default btn-md btn-block">
+    <i class="icon mobile-phone"></i>
+    <span class="phone-text">Click Here to Call Us</span>
+  </a>
+  {% endfor %}
+</div>

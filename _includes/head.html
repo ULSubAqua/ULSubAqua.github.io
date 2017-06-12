@@ -1,0 +1,23 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{{site.baseurl}}/assets/images/small-images/logo.png"/>
+  <script src="https://use.fontawesome.com/6b01bd3b64.js"></script>
+  {% for item in site.data.company-details %}
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ item.company-name | escape }}{% endif %}</title>
+  {% endfor %}
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <!--<link href='https://fonts.googleapis.com/css?family=Lato|Suez+One' rel='stylesheet' type='text/css'>-->
+  {% include partial/og.html %}
+  {% if site.environment != "development" %}
+  <link rel="stylesheet" href="{{ "/css/main.min.css" | prepend: site.baseurl }}">
+  {% else %}
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  {% endif %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.map-height != nil %}
+    {% include script/map-scripts.html %}
+  {% endif %}
+</head>

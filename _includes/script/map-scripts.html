@@ -1,0 +1,43 @@
+<style>#map-canvas { width: 100%; height: {{ page.map-height }}; }</style>
+{% comment %}{% capture map_description %}{% include {{site.data.map.description }}%}{% endcapture %}{% endcomment %}
+<script>
+var cwCentre = {
+  latitude:{{ site.data.map.latitude }},
+  longitude:{{ site.data.map.longitude }},
+  zoom:{{ page.map-zoom }},
+  mainMarker:"{{ site.baseurl}}/{{ site.data.map.main-marker }}",
+  secondaryMarker:"{{ site.baseurl}}/{{ site.data.map.secondary-marker }}",
+  waterColour:"{{ site.data.map.water-colour }}",
+  landColour:"{{ site.data.map.land-colour }}",
+  mainRoadColour:"{{ site.data.map.main-road-colour }}",
+  minorRoadColour:"{{ site.data.map.minor-road-colour }}",
+  title: "{{ site.data.map.title | escape }}",
+  //description:'{{ map_description | markdownify | strip_newlines }}',
+};
+{% if "single-centre" == page.map-type and true == page.map-supplementary-markers %}
+var markers = [
+  {% for location in site.data.map-coords %}
+    [
+      '{{ location.name | escape }}',
+      {{ location.latitude }},
+      {{ location.longitude }},
+      //'{{ location.description | escape }}'
+    ]
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+{% elsif "multi-centre" == page.map-type %}
+var markers = [
+  {% for location in site.data.secondary-map-coords %}
+    [
+      '{{ location.name | escape }}',
+      {{ location.latitude }},
+      {{ location.longitude }},
+      //'{{ location.description | escape }}'
+    ]
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+{% endif %}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{site.data.map.api-key}}"></script>

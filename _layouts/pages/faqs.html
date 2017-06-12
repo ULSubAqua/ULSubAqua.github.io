@@ -1,0 +1,31 @@
+---
+layout: default
+post-type: page
+---
+<div class="container">
+  <h2>This page is to showcase the site Faqs</h2>
+  {{page.content}}
+
+  <div id="accordion" class="accordion" role="tablist" aria-multiselectable="true">
+
+    {% for faq in site.faqs %}
+    <div class="card">
+      <div class="card-header" role="tab" id="heading{{forloop.index}}">
+        <h5 class="mb-0">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{forloop.index}}" aria-expanded="true" aria-controls="collapse{{forloop.index}}">
+            {{ faq.question }}
+            <i class="togglestate icon-circle-down"></i>
+          </a>
+        </h5>
+      </div>
+      <div id="collapse{{forloop.index}}" class="collapse" role="tabpanel" aria-labelledby="heading{{forloop.index}}">
+        <div class="card-block">
+          {{ faq.content }}
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+
+  </div>
+</div>

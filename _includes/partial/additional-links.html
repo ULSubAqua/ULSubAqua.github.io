@@ -1,0 +1,7 @@
+<div class="btn-group-vertical top-space" role="group">
+  {% for link in section.additional-links %}
+    <a href="{{ link.url }}" class="btn btn-default btn-lg{% if link.class != nil %} {{ link.class }}{% endif %}">
+      <span class="link-text">&nbsp{{ link.text }}</span>
+    </a>
+  {% endfor %}
+</div>

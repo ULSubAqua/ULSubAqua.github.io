@@ -1,0 +1,33 @@
+{% if page.additional-images != nil %}
+<h2>Project Images</h2>
+<div id="masonry-container">
+<style media="screen">
+  .item { margin: 5px; width: 32%; }
+</style>
+{% for image in page.additional-images %}
+<div class="item">
+  <!-- <a href="#myModal-{{ forloop.index }}" data-toggle="modal" data-target="#myModal-{{ forloop.index }}"> -->
+    <img class="img-fluid" src="{{ site.baseurl }}/{{ image.src }}" alt="{{ image.title }}" />
+  <!-- </a> -->
+</div>
+<!-- <div id="myModal-{{ forloop.index }}" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h3 class="modal-title">{{ image.title }}</h3>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="{{ site.baseurl }}/{{ image.src }}" alt="{{ image.title }}" />
+      </div>
+      <div class="modal-footer">
+        <a href="#" id="gallery-previous" class="controls btn btn-lg">&laquo;&nbsp;Previous</a>
+        <a href="#" id="gallery-next" class="controls btn btn-lg">Next&nbsp;&raquo;</a>
+        <button class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+{% endfor %}
+</div>
+{% endif %}

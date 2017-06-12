@@ -1,0 +1,138 @@
+a {
+  color: darken(#74777A, 20%);
+}
+
+hr {
+  border-top: 0.1rem solid #474747;
+}
+
+.light-text {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  margin-top: 2rem;
+}
+
+.page-content {
+  padding: 3.125rem 0 3.125rem 0;
+  font-size: $font-size-base;
+}
+
+.post-content {
+  padding-top: 0.625rem;
+}
+
+.teaser {
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.blog-teasers {
+  padding-bottom: 3.125rem;
+}
+
+.page-content-frontpage {
+  //padding: 75px 0 0 0;
+  font-size: $font-size-base;
+}
+
+.section {
+  padding: 3.125rem 0 3.125rem 0;
+}
+
+.thumbnail {
+  padding-top: 2rem;
+}
+
+.about-page-link {
+  text-decoration: underline;
+}
+
+.img-caption {
+  position: relative;
+  h5 {
+    position: absolute;
+    bottom: 0;
+    padding: 0.625rem;
+    background: rgba(#3d3d3d, 0.7);
+    margin-bottom: 0;
+    color: #fff;
+    width: 100%;
+    //text-align: center;
+  }
+}
+
+.bottom-space {
+  padding-bottom: 1.25rem;
+}
+
+a#go-top {
+  background: rgba(#7e7e7e, 0.82);
+  border: solid 0.0625rem $button-colour;
+  color: #fff;
+
+}
+
+.contact-map {
+  margin-bottom: 2.5rem;
+}
+
+#go-top {
+
+  position: fixed;
+  bottom: 3.75rem;
+  right: 1.25rem;
+  padding: 0.625rem;
+  display: none;
+
+  .go-top-text {
+
+    font-size: 1.125rem;
+
+  }
+
+}
+
+.margin-top {
+  margin-top: 3.125rem;
+}
+
+/* Extra small screen and smaller */
+@include media-breakpoint-up(xs) {
+  h1 {
+
+    font-size: $font-size-h1;
+    margin-top: 0;
+
+  }
+  h2 {
+
+    font-size: $font-size-h2;
+
+  }
+
+  h3 {
+
+    font-size: $font-size-h3;
+
+  }
+
+  h4 {
+
+    font-size: $font-size-h4;
+
+  }
+
+  .bottom-space {
+
+    padding-bottom: 0;
+
+  }
+
+}

@@ -1,0 +1,33 @@
+# Map API key
+# ------------------------------------------------------------------------------
+api-key: AIzaSyCcvitpEr7InTCVgxgN86k5vL_rSQ4Xt5w
+# Map centre Latitude & Longitude
+# ------------------------------------------------------------------------------
+latitude: 53.346849
+longitude: -6.279081
+
+#zoom: 12
+height: 548px
+
+# Set custom colour variables
+# ------------------------------------------------------------------------------
+water-colour: "#578fb8"
+land-colour: "#d3dfdf"
+main-road-colour: "#777777"
+minor-road-colour: "#786f6f"
+
+# Icon Images
+# ------------------------------------------------------------------------------
+# Image to be used as the main marker icon
+main-marker: assets/images/marker.png
+
+# Image to be used as the secondary marker icon (if necessary)
+secondary-marker: assets/images/marker-2.png
+
+# Main infowindow
+# ------------------------------------------------------------------------------
+# Title of the main map info window
+title: Jekyll Starter
+
+# Body content for the main map info window - references a markdown file
+#description: This is a map description.

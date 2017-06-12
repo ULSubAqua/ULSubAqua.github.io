@@ -1,0 +1,41 @@
+.jumbotron {
+
+  min-height: 12.5rem;
+  color: #fff;
+  margin-bottom: 0rem;
+  background-color: $jumbotron-background;
+  border-radius: 0rem;
+  //padding: 20px;
+
+}
+
+/* Small screen and larger */
+@include media-breakpoint-up(sm) {
+
+  .jumbotron-border {
+
+    -webkit-box-shadow: 0.25rem 0.25rem 0.3125rem 0rem rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0.25rem 0.25rem 0.3125rem 0rem rgba(50, 50, 50, 0.75);
+    box-shadow:         0.25rem 0.25rem 0.3125rem 0rem rgba(50, 50, 50, 0.75);
+
+  }
+
+}
+
+.jumbotron.menu {
+
+  min-height: 12.5rem;
+  color: #665;
+  margin-bottom: 0rem;
+  background-color: #fff;
+  border: solid 0.0625rem #665;
+  border-radius: 0rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.3125rem 0rem rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0.25rem 0.25rem 0.3125rem 0rem rgba(50, 50, 50, 0.75);
+  box-shadow:         0.25rem 0.25rem 0.3125rem 0rem rgba(50, 50, 50, 0.75);
+
+  p {
+    font-size: 1rem;
+  }
+
+}

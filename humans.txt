@@ -1,0 +1,22 @@
+/* TEAM */
+
+  Title: David Egan
+  Site: http://carawebs.com
+  Twitter: @DavidRedBranch
+  Location: Co. Clare, Ireland
+
+  Title: Rory Egan
+  Site: http://carawebs.com
+  Location: Co. Clare, Ireland
+
+  Title: Elaine Egan
+  Site: http://carawebs.com
+  Twitter: @ElaineCarawebs
+  Location: Co. Clare, Ireland
+
+
+/* SITE */
+  Last Update:
+  Standard: HTML5
+  Components: jQuery, Bootstrap
+  Software: Jekyll, Grunt, Bower

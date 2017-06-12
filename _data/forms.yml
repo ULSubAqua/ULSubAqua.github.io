@@ -1,0 +1,22 @@
+- formtype: "text"
+  type: "text"
+  name: "first_name"
+  placeholder: "First Name"
+
+- formtype: "text"
+  type: "text"
+  name: "last_name"
+  placeholder: "Last Name"
+
+- formtype: "text"
+  type: "email"
+  name: "email"
+  placeholder: "Your Email"
+
+- formtype: "textarea"
+  id: "textarea"
+  name: "message_from_lead"
+  placeholder: "Your Message"
+
+- formtype: "radio"
+  name: "interested_in"

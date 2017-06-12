@@ -1,0 +1,6 @@
+<ul>
+{% for node in site.data.nav %}
+{% capture nodecheck %}{% if node.url != "/" %}{{ node.url }}/{% else %}/{% endif %}{% endcapture %}
+    <li><a href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
+{% endfor %}
+</ul>

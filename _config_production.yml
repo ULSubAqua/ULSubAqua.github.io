@@ -1,0 +1,5 @@
+url: ""
+#baseurl: "http://carawebstest.com/jekyll-starter"
+production: true
+#paginate: 3
+#paginate_path: /jekyll-starter/_site/blog/page:num/

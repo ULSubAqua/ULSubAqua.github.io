@@ -1,0 +1,26 @@
+{% if page.mobile-cta != nil %}
+{% assign mobile-cta = page.mobile-cta %}
+{% else %}
+{% assign mobile-cta = "Click to Call" %}
+{% endif %}
+{% if page.desktop-cta != nil %}
+{% assign desktop-cta = page.desktop-cta %}
+{% else %}
+{% assign desktop-cta = "Call Now: " %}
+{% endif %}
+<div class="body-phone button">
+  <!--<div class="text-center">-->
+    {% for item in site.data.contact %}
+    <h3>{{ item.call-to-action }}</h3>
+    <span class="hidden-xs-down nonclick-phone">
+        <span><i class="icon icon-phone"></i> {{ desktop-cta }} {{ item.mobile-number }}</span>
+    </span>
+    <span class="hidden-sm-up">
+      <a href="tel:{{item.mobile-number}}" class="click-phone btn btn-secondary btn-block">
+        <span class="phone-text">{{ mobile-cta }}</span>
+        <i class="icon mobile-phone"></i>
+      </a>
+    </span>
+    {% endfor %}
+  <!--</div>-->
+</div>

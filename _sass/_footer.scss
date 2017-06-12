@@ -1,0 +1,71 @@
+.footer {
+
+  padding-top: 40px;
+
+  .btn.ghost {
+
+    border-color: #fff;
+
+  }
+
+  margin-top: 0;
+  //padding-bottom: $vertical-padding;
+  background-color: $footer-background;
+  color: $footer-colour;
+  font-size: 1rem;
+
+  a.social-icons {
+
+    color: $footer-link-colour;
+
+    &:hover {
+
+      opacity: 0.6;
+
+    }
+
+  }
+
+  .social-icons.btn {
+
+    margin-bottom: 0.625rem;
+
+  }
+
+  a {
+    color: $footer-link-colour;
+  }
+
+}
+
+.cw-credit {
+
+  margin-top: 2.5rem;
+
+  font-size: 0.875rem;
+
+  a {
+
+    text-decoration: underline;
+
+  }
+
+}
+
+#sticky-phone-footer {
+
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background: $footer-background;
+  width: 100%;
+
+  a {
+
+    color: $footer-link-colour;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+
+  }
+
+}

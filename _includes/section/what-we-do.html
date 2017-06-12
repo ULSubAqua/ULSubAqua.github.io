@@ -1,0 +1,22 @@
+{% include partial/style-rules.html %}
+<section id="{% if section.unique-class != nil %}
+{{ section.unique-class }}
+{% else %}
+{{ section.title | slugify }}
+{% endif %}" class="content-section {% if 'light' == section.text-colour %} light-text{% endif %}"{% include partial/style-rules.html %}{{ bg-style }}>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="text-center">
+          <img class="img-fluid"src="{{ site.baseurl }}/{{ section.image }}" alt="">
+        </div>
+      </div>
+      <div class="col-md-5 offset-md-1">
+          {{section.content}}
+        <div class="contact-section">
+          {% include partial/contact-list.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

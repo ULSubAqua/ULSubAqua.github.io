@@ -1,0 +1,197 @@
+.carousel-inner {
+  .caption-container {
+    position: relative;
+    h4 {
+      position: absolute;
+      bottom: 0;
+      padding: 0.625rem;
+      //background: $carousel-background;
+      margin-bottom: 0;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.carousel-control {
+
+  .icon {
+
+    font-size: 2.5rem;
+    padding: 0.3125rem;
+    //background: $carousel-background;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.25rem;
+    z-index: 5;
+    display: inline-block;
+
+  }
+
+}
+
+.carousel-control {
+  background-image: none;
+  filter: none;
+
+  &:hover, &:focus {
+    background-image: none;
+    opacity: 1;//0.9;
+    filter: none;//alpha(opacity=90);
+  }
+}
+
+.left.carousel-control {
+
+  background-image: none;
+  text-align: left;
+  color: #fff;
+  //margin-left: -15px;
+
+  .icon {
+    left: 0;
+  }
+}
+
+.right.carousel-control {
+
+  background-image: none;
+  text-align: left;
+  color: #fff;
+  //margin-right: -15px;
+
+  .icon {
+    right: 0;
+  }
+}
+
+// Indicators
+.carousel-indicators {
+  background: rgba(0,0,0,0.3);
+  margin-bottom: 0;
+  width: 10%;
+  margin-left: -5%;
+}
+
+.carousel-indicators .active {
+  margin: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #fff;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  margin: 0.0625rem;
+  text-indent: -62.4375rem;
+  border: 0.0625rem solid #fff;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  //background-color: #000 \9;
+  //background-color: rgba(0,0,0,0);
+  bottom: 0;
+}
+
+@include media-breakpoint-down(md){
+
+  .carousel-indicators {
+    bottom: 0;
+  }
+
+}
+
+#testimonials-carousel {
+
+  position: relative;
+
+  blockquote {
+    border-left: none;
+  }
+
+  a.play-pause {
+
+    display: inline-block;
+
+  }
+
+  #play-carousel {
+
+    display: none;
+
+  }
+
+  .testimonial-person {
+
+    font-weight: bold;
+
+  }
+
+  .carousel-control-wrap {
+
+    position: absolute;
+    bottom: -1.25rem;
+    right: 0;
+    height: 2.1875rem;
+    width: 6.25rem;
+    margin-top: 0.625rem;
+
+  }
+
+  .carousel-control,
+  .carousel-control .icon {
+
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    font-size: 0.75rem;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.6);
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+
+}
+
+// Fade not slide
+// -----------------------------------------------------------------------------
+.carousel-fade {
+
+  opacity: 1;
+
+  .carousel-item {
+
+    -moz-transition: opacity ease-in-out .7s;
+    -o-transition: opacity ease-in-out .7s;
+    -webkit-transition: opacity ease-in-out .7s;
+    transition: opacity ease-in-out .7s;
+    left: 0 !important;
+    opacity: 0;
+    top:0;
+    position:absolute;
+    width: 100%;
+    display:block !important;
+    &:first-child {
+
+        top:auto;
+        position:relative;
+
+    }
+
+    &.active {
+        opacity: 1;
+        -moz-transition: opacity ease-in-out .7s;
+        -o-transition: opacity ease-in-out .7s;
+        -webkit-transition: opacity ease-in-out .7s;
+        transition: opacity ease-in-out .7s;
+    }
+
+  }
+
+}

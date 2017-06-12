@@ -1,0 +1,39 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+section-1-image: assets/images/hero.jpg
+intro-image: assets/images/image-4.jpg
+
+# Site settings
+description: We are a Sub Aqua club based out of the University of Limerick. We dive all over 
+              the West of ireland and even further abroad...
+baseurl: "/scuba/_site" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "/blog/page:num/"
+collections:
+  projects:
+    output: true
+  services:
+    output: true
+  offers:
+    output: true
+  frontpage-sections:
+    output: true
+  landing-page-sections:
+    output: true
+  faqs:
+    output: true
+
+
+# Build settings
+markdown: kramdown
+
+# Exclude array
+exclude: [node_modules, bower_components, assets/original-images, Gruntfile.js, HINTGruntfile.js, bower.json, package.json, readme.md]

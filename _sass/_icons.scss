@@ -1,0 +1,108 @@
+i.icon {
+
+
+  &.mobile-phone {
+
+    @extend .icon-phone;
+
+  }
+
+  &.landline-phone {
+
+    @extend .icon-phone;
+
+  }
+
+  &.email {
+
+    @extend .icon-mail4;
+
+  }
+
+  &.facebook {
+
+    @extend .icon-facebook2;
+  }
+
+  &.instagram {
+
+    //@extend .icon-instagram;
+  }
+
+  &.arrow-up {
+
+    @extend  .icon-arrow-up;
+
+  }
+
+  &.arrow-down {
+
+    @extend .icon-arrow-down;
+
+  }
+
+  &.chevron-down {
+
+    @extend .icon-circle-down;
+
+  }
+
+  &.clock {
+
+    //@extend .fa-clock-o;
+
+  }
+
+  &.tags {
+
+    //@extend .fa-tags;
+
+  }
+
+  &.user {
+
+    //@extend .fa-user;
+
+  }
+
+  &.tags {
+
+    //@extend .fa-tags;
+
+  }
+
+  &.tick {
+
+    @extend .icon-checkmark;
+
+  }
+
+  &.carousel-control-icon {
+
+    &.icon-left {
+
+      @extend .icon-backward2;
+
+    }
+
+    &.icon-right {
+
+      @extend .icon-forward3;
+
+    }
+
+    &.play {
+
+      @extend .icon-play3;
+
+    }
+
+    &.pause {
+
+      @extend .icon-pause2;
+
+    }
+
+  }
+
+}

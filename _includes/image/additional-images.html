@@ -1,0 +1,6 @@
+{% if page.additional-images != nil %}
+<h2>Project Images</h2>
+  {% for image in page.additional-images %}
+  <img class="img-fluid" src="{{ site.baseurl }}/{{ image.src }}" alt="{{ image.title }}" />
+  {% endfor %}
+{% endif %}

@@ -1,0 +1,10 @@
+<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  {% for address in site.data.address %}
+    {% if address.company-address-line-1 != nil %}<span itemprop="streetAddress">{{ address.company-address-line-1 }}</span><br/>{% endif %}
+    {% if address.company-address-line-2 != nil %}<span itemprop="streetAddress">{{ address.company-address-line-2 }}</span><br/>{% endif %}
+    {% if address.company-address-town != nil %}<span itemprop="addressLocality">{{ address.company-address-town }}</span><br/>{% endif %}
+    {% if address.company-address-county != nil %}<span itemprop="addressLocality">{{ address.company-address-county }}</span><br/>{% endif %}
+    {% if address.company-address-country != nil %}<span itemprop="addressCountry">{{ address.company-address-country }}</span><br/>{% endif %}
+ <!--<span itemprop="postalCode"></span> this won't display, but coming soon in Ireland! -->
+ {% endfor %}
+</div>
