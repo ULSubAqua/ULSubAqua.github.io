@@ -20,17 +20,17 @@ images:
       {% for post in paginator.posts %}
       <div class="row blog-teasers">
         <div class="col-md-4">
-          <a href="{{ site.baseurl }}{{ post.url }}">
+          <a href="{{  }}{{ post.url }}">
             {% if nil != post.featured-image %}
-            <img src="{{ site.baseurl }}/{{ post.featured-image }}" class="img-fluid" title="{{ post.title }}">
+            <img src="{{  }}/{{ post.featured-image }}" class="img-fluid" title="{{ post.title }}">
             {% else %}
-            <img src="{{ site.baseurl }}/{{ page.featured-image }}" class="img-fluid" title="{{ post.title }}">
+            <img src="{{  }}/{{ page.featured-image }}" class="img-fluid" title="{{ post.title }}">
             {% endif %}
           </a>
         </div>
         <div class="col-md-8">
           <div class="teaser">
-            <a href="{{ site.baseurl }}{{ post.url }}">
+            <a href="{{  }}{{ post.url }}">
               <h2>{{ post.title }}</h2>
             </a>
             {% if nil != post.category %}
@@ -40,7 +40,7 @@ images:
             {% endif %}
           </div>
           {{ post.excerpt | truncatewords: 35 }}
-          <br><a href="{{ site.baseurl }}{{ post.url }}" class="readmore btn btn-default btn-md">Read More&nbsp;&raquo;</a>
+          <br><a href="{{  }}{{ post.url }}" class="readmore btn btn-default btn-md">Read More&nbsp;&raquo;</a>
         </div>
       </div>
 
@@ -51,10 +51,10 @@ images:
       <div class="pagination">
         <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span><br />
         {% if paginator.previous_page %}
-        <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="btn btn-default btn-md previous">&laquo;&nbsp;Previous</a>
+        <a href="{{  }}{{ paginator.previous_page_path }}" class="btn btn-default btn-md previous">&laquo;&nbsp;Previous</a>
         {% endif %}
         {% if paginator.next_page %}
-        <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="btn btn-default btn-md next">Next&nbsp;&raquo;</a>
+        <a href="{{  }}{{ paginator.next_page_path }}" class="btn btn-default btn-md next">Next&nbsp;&raquo;</a>
         {% endif %}
       </div>
       {% endif %}

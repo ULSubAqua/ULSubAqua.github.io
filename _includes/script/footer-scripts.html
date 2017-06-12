@@ -1,34 +1,34 @@
 {% if site.production == true %}
   <!-- THIS IS PROD -->
-  <script src="{{ site.baseurl }}/assets/js/scripts.min.js"></script>
+  <script src="{{  }}/assets/js/scripts.min.js"></script>
   {% if page.map-type == "single-centre" or nil %}
-    <script src="{{ site.baseurl }}/assets/js/custom/map-control.js"></script>
+    <script src="{{  }}/assets/js/custom/map-control.js"></script>
   {% endif %}
   {% if page.toc == true %}
-    <script src="{{ site.baseurl }}/assets/js/custom/toc.js"></script>
+    <script src="{{  }}/assets/js/custom/toc.js"></script>
   {% endif %}
-  <script src="{{ site.baseurl }}/assets/js/custom/google-analytics.js"></script>
+  <script src="{{  }}/assets/js/custom/google-analytics.js"></script>
 {% else %}
   <!-- THIS IS DEV -->
   <script src="../../bower_components/jquery/jquery.min.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/custom/custom-jquery.js"></script>
-  <!--<script src="{{ site.baseurl }}/assets/js/custom/navbar-shrink.js"></script>-->
-  <!-- <script src="{{ site.baseurl }}/assets/js/custom/gallery.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/custom/defer-images.js"></script> -->
-  <script src="{{ site.baseurl }}/assets/js/custom/sticky-navbar.js"></script>
-  <!--<script src="{{ site.baseurl }}/assets/js/custom/masonry.js"></script>-->
+  <script src="{{  }}/assets/js/vendor/bootstrap.js"></script>
+  <script src="{{  }}/assets/js/custom/custom-jquery.js"></script>
+  <!--<script src="{{  }}/assets/js/custom/navbar-shrink.js"></script>-->
+  <!-- <script src="{{  }}/assets/js/custom/gallery.js"></script>
+  <script src="{{  }}/assets/js/custom/defer-images.js"></script> -->
+  <script src="{{  }}/assets/js/custom/sticky-navbar.js"></script>
+  <!--<script src="{{  }}/assets/js/custom/masonry.js"></script>-->
 
   <!-- Map Scripts -->
   {% if page.map-type == "single-centre" %}
-  <!--<script src="{{ site.baseurl }}/assets/js/custom/map-control.js"></script>-->
+  <!--<script src="{{  }}/assets/js/custom/map-control.js"></script>-->
   {% endif %}
   {% if page.map-type == "multi-centre" %}
-  <!--<script src="{{ site.baseurl }}/assets/js/custom/multi-centre-map-control.js"></script>-->
+  <!--<script src="{{  }}/assets/js/custom/multi-centre-map-control.js"></script>-->
   {% endif %}
   <!-- End Maps -->
   {% if page.toc == true %}
-  <script src="{{ site.baseurl }}/assets/js/custom/toc.js"></script>
+  <script src="{{  }}/assets/js/custom/toc.js"></script>
   {% endif %}
 {% endif %}

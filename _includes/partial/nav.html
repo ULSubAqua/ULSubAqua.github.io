@@ -1,15 +1,15 @@
 {% for node in site.data.nav %}
   {% capture nodecheck %}{% if node.url != "/" %}{{ node.url }}/{% else %}/{% endif %}{% endcapture %}
     {% if page.url == nodecheck %}
-      <li class="active nav-item"><a href="{{ site.baseurl }}{{node.url}}" class="active">{{node.title}}</a></li>
+      <li class="active nav-item"><a href="{{  }}{{node.url}}" class="active">{{node.title}}</a></li>
     {% elsif page.layout == "posts/service-post" and node.url == "/services" %}
-      <li class="active nav-item"><a href="{{ site.baseurl }}{{node.url}}" class="active">{{node.title}}</a></li>
+      <li class="active nav-item"><a href="{{  }}{{node.url}}" class="active">{{node.title}}</a></li>
     {% elsif page.layout == "posts/project-post" and node.url == "/projects" %}
-      <li class="active nav-item"><a href="{{ site.baseurl }}{{node.url}}" class="active">{{node.title}}</a></li>
+      <li class="active nav-item"><a href="{{  }}{{node.url}}" class="active">{{node.title}}</a></li>
     {% elsif page.layout == "posts/blog-post" and node.url == "/blog" %}
-      <li class="active nav-item"><a href="{{ site.baseurl }}{{node.url}}" class="active">{{node.title}}</a></li>
+      <li class="active nav-item"><a href="{{  }}{{node.url}}" class="active">{{node.title}}</a></li>
     {% else %}
-      <li class="nav-item"><a href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
+      <li class="nav-item"><a href="{{  }}{{node.url}}">{{node.title}}</a></li>
     {% endif %}
   </li>
 {% endfor %}

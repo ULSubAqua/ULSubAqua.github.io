@@ -6,8 +6,8 @@
       {% for post in site.posts limit: 3 %}
       <div class="col-md-4">
         <div class="card">
-          <a href="{{ site.baseurl }}/{{ post.url }}" class="img-card-top image-link" title="{{ page.title }}">
-            <img src="{{ site.baseurl }}/{{ post.featured-image }}" data-src="{{ site.baseurl }}/{{ post.featured-image }}" height="512" width="768" class="img-fluid" alt="{{ page.title }}" title="{{ page.title }}">
+          <a href="{{  }}/{{ post.url }}" class="img-card-top image-link" title="{{ page.title }}">
+            <img src="{{  }}/{{ post.featured-image }}" data-src="{{  }}/{{ post.featured-image }}" height="512" width="768" class="img-fluid" alt="{{ page.title }}" title="{{ page.title }}">
           </a>
           <div class="card-block">
             <div class="card-title">
@@ -15,7 +15,7 @@
             </div>
             <div class="card-text">
               {% if post.custom-excerpt != nil %}{{ post.custom-excerpt }}{% else %}{{ post.excerpt | truncatewords: 18 }}{% endif %}
-              <br><a class="btn btn-default btn-md ghost services-button" href="{{ site.baseurl }}/{{ post.url }}">More Info&nbsp;&raquo;</a>
+              <br><a class="btn btn-default btn-md ghost services-button" href="{{  }}/{{ post.url }}">More Info&nbsp;&raquo;</a>
             </div>
           </div>
         </div>

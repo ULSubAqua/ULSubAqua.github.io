@@ -10,7 +10,7 @@
 <div class="carousel-inner" role="listbox">
   {% for slide in page.images %}
   <div class="carousel-item{% if forloop.first == true %} active{% endif %}">
-    <img src="{{ site.baseurl }}/{{ slide.src }}" alt="{{ slide.title }}" title="{{ slide.title }}" class="img img-fluid" height="512" width="768">
+    <img src="{{  }}/{{ slide.src }}" alt="{{ slide.title }}" title="{{ slide.title }}" class="img img-fluid" height="512" width="768">
     {% if slide.description %}
     <!-- <div class="caption-container">
       <h4 class="caption">{{ slide.description }}</h4>

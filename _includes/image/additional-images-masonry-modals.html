@@ -7,7 +7,7 @@
 {% for image in page.additional-images %}
 <div class="item">
   <!-- <a href="#myModal-{{ forloop.index }}" data-toggle="modal" data-target="#myModal-{{ forloop.index }}"> -->
-    <img class="img-fluid" src="{{ site.baseurl }}/{{ image.src }}" alt="{{ image.title }}" />
+    <img class="img-fluid" src="{{  }}/{{ image.src }}" alt="{{ image.title }}" />
   <!-- </a> -->
 </div>
 <!-- <div id="myModal-{{ forloop.index }}" class="modal fade" tabindex="-1" role="dialog">
@@ -18,7 +18,7 @@
         <h3 class="modal-title">{{ image.title }}</h3>
       </div>
       <div class="modal-body">
-        <img class="img-fluid" src="{{ site.baseurl }}/{{ image.src }}" alt="{{ image.title }}" />
+        <img class="img-fluid" src="{{  }}/{{ image.src }}" alt="{{ image.title }}" />
       </div>
       <div class="modal-footer">
         <a href="#" id="gallery-previous" class="controls btn btn-lg">&laquo;&nbsp;Previous</a>
