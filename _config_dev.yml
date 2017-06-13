@@ -1,6 +1,6 @@
 url: ""
 # This baseurl will be needed if a virtual host is not enabled
-baseurl: "/scuba/_site"
+baseurl: ""
 #baseurl: ""
 paginate: 10
 production: false
