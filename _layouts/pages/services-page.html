@@ -16,7 +16,7 @@ post-type: page
           {{ post.excerpt }}
         {% endif %}
         <br>
-        <a class="btn btn-default btn-md services-button" href="{{  }}{{ post.url }}">
+        <a class="btn btn-default btn-md services-button" href="{{ post.url }}">
           Find out More&nbsp;&raquo;
         </a>
         <hr>
@@ -26,7 +26,7 @@ post-type: page
     <div class="col-md-5 offset-md-1">
       {% for image in page.images %}
       <div class="thumbnail">
-        <img class="img-fluid" src="{{  }}/{{ image.src }}" title="{{ image.title }}" height="512" width="768" />
+        <img class="img-fluid" src="/{{ image.src }}" title="{{ image.title }}" height="512" width="768" />
       </div>
       {% endfor %}
     </div>

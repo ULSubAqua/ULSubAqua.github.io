@@ -14,7 +14,7 @@ post-type: blog-post
         <span class="author"><i class="fa fa-user-o"></i>&nbsp;{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif%}</span>
       </header>
       <br>
-      <img src="{{  }}/{{ page.featured-image }}" alt="" class="img-fluid">
+      <img src="/{{ page.featured-image }}" alt="" class="img-fluid">
       {% if page.image-caption != nil %}<div class="img-caption">{{ page.image-caption }}</div>{% endif %}
       <br>
       <br>

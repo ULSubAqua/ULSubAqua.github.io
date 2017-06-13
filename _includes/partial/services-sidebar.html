@@ -2,12 +2,12 @@
   {% if page.layout == "about" %}
   {% for image in page.images %}
   {% if forloop.first == true %}
-  <img src="{{  }}/{{ image.src }}" title="{{ image.title }}" alt="{{ image.alt }}" class="img-fluid">
+  <img src="/{{ image.src }}" title="{{ image.title }}" alt="{{ image.alt }}" class="img-fluid">
   {% if image.caption != nil %}
   <div class="img-caption"><h5>{{ image.caption }}</h5></div>
   {% endif %}
   {% else %}
-  <img src="{{  }}/{{ image.src }}" title="{{ image.title }}" alt="{{ image.alt }}" class="img-fluid" style="margin-top: 40px;">
+  <img src="/{{ image.src }}" title="{{ image.title }}" alt="{{ image.alt }}" class="img-fluid" style="margin-top: 40px;">
   {% endif %}
   {% endfor %}
   {% else %}

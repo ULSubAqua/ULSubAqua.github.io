@@ -1,7 +1,7 @@
 {
   "name": "cw-templates",
   "version": "0.0.1",
-  "author": "David Egan <david@carawebs.com>",
+  "author": "Rory Egan",
   "homepage": "http://carawebs.com",
   "private": true,
   "engines": {
