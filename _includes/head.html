@@ -3,6 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/assets/images/small-images/logo.png"/>
+  <link rel="stylesheet" href="{{ "/css/main.css"}}">
   <script src="https://use.fontawesome.com/6b01bd3b64.js"></script>
   {% for item in site.data.company-details %}
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ item.company-name | escape }}{% endif %}</title>
@@ -10,11 +11,6 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <!--<link href='https://fonts.googleapis.com/css?family=Lato|Suez+One' rel='stylesheet' type='text/css'>-->
   {% include partial/og.html %}
-  {% if site.environment != "development" %}
-  <link rel="stylesheet" href="{{ "/css/main.css"}}">
-  {% else %}
-  <link rel="stylesheet" href="{{ "/css/main.css"}}">
-  {% endif %}
   {% if page.map-height != nil %}
     {% include script/map-scripts.html %}
   {% endif %}
