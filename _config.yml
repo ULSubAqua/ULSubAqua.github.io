@@ -11,7 +11,7 @@ intro-image: assets/images/image-4.jpg
 # Site settings
 description: We are a Sub Aqua club based out of the University of Limerick. We dive all over
               the West of ireland and even further abroad...
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://ulsubaqua.github.io/" # the subpath of your site, e.g. /blog
 url: "https://ulsubaqua.github.io/" # the base hostname & protocol for your site
 
 gems: [jekyll-paginate]

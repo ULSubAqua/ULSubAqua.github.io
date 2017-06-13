@@ -1,6 +1,6 @@
-url: ""
+url: "https://ulsubaqua.github.io/"
 # This baseurl will be needed if a virtual host is not enabled
-baseurl: ""
+baseurl: "https://ulsubaqua.github.io/"
 #baseurl: ""
 paginate: 10
 production: false

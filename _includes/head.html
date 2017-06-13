@@ -15,8 +15,6 @@
   {% else %}
   <link rel="stylesheet" href="{{ "/css/main.css"}}">
   {% endif %}
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" }}">
   {% if page.map-height != nil %}
     {% include script/map-scripts.html %}
   {% endif %}
