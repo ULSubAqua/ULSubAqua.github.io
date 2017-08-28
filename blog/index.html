@@ -18,7 +18,7 @@ images:
       {% for post in site.posts %}
       <div class="col-md-4">
         <div class="card">
-          <a href="{{ post.url }}" class="img-card-top image-link" title="{{ page.title }}">
+          <a href="{{site.url}}/{{ post.url }}" class="img-card-top image-link" title="{{ page.title }}">
               <img src="/{{ post.featured-image }}" data-src="/{{ post.featured-image }}" height="512" width="768" class="img-fluid" alt="{{ page.title }}" title="{{ page.title }}">
           </a>
           <div class="card-block">
