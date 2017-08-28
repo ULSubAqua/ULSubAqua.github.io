@@ -27,7 +27,7 @@ images:
             </div>
             <div class="card-text">
               {% if post.custom-excerpt != nil %}{{ post.custom-excerpt }}{% else %}{{ post.excerpt | truncatewords: 18 }}{% endif %}
-              <br><a class="btn btn-default btn-md ghost services-button" href="/{{ post.url }}">More Info&nbsp;&raquo;</a>
+              <br><a class="btn btn-default btn-md ghost services-button" href="{{site.url}}/{{ post.url }}">More Info&nbsp;&raquo;</a>
             </div>
           </div>
         </div>
