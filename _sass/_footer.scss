@@ -69,3 +69,9 @@
   }
 
 }
+
+.contact-list {
+  @include media-breakpoint-down(sm) {
+    padding-left: 15px;
+  }
+}
