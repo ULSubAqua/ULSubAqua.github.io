@@ -15,7 +15,7 @@ images:
     Blog Intro!!!
   </div>
   <div class="row">
-      {% for post in paginator.posts %}
+      {% for post in site.posts %}
       <div class="col-md-4">
         <div class="card">
           <a href="{{ post.url }}" class="img-card-top image-link" title="{{ page.title }}">
