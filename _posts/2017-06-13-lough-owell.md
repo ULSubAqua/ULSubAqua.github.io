@@ -1,7 +1,7 @@
 ---
 layout: posts/blog-post
 title:  "Lough Owell Trip"
-author: Fionan Crimmins
+author: Fionnan Crimmins
 order: 1
 featured-image: ../assets/images/medium-images/owell-1.jpg
 images-category:
