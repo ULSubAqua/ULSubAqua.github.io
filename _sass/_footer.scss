@@ -72,6 +72,6 @@
 
 .contact-list {
   @include media-breakpoint-down(sm) {
-    padding-left: 15px;
+    padding-left: 0.9375rem;
   }
 }

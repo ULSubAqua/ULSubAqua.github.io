@@ -6843,6 +6843,10 @@ ul.project-info {
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem; }
 
+@media (max-width: 767px) {
+  .contact-list {
+    padding-left: 15px; } }
+
 a {
   color: #424446; }
 
